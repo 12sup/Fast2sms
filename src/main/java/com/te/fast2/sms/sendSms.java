@@ -52,6 +52,7 @@ public class sendSms {
 				System.out.println(buffer);
 			}
 			System.out.println(url);
+			System.out.println("Here we will be catching url");
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -61,6 +62,7 @@ public class sendSms {
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(sendSms.class, args);
 		sendSms.sendSms("this is my first sms through fast2sms:" + new Date().toLocaleString(), "6261458904");
+		System.out.println("this is a final output");
 	}
 
 }
